@@ -1,0 +1,3 @@
+# Resource Template
+The terraform module screates a lambda by arcvhving the python code.
+etc....
