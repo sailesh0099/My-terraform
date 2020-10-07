@@ -69,10 +69,7 @@ variable "ebs_vol_encrypted" {
   default     = ""
 }
 
-/*
-http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html
-For the best per-I/O latency experience, we recommend that you provision an IOPS-to-GiB ratio greater than 2:1. For example, a 2,000 IOPS volume should be smaller than 1,000 GiB.
-*/
+
 variable "ebs_vol_iops" {
   type        = "string"
   description = "The amount of provisioned IOPS. Only utilized with 'ebs_vol_type' of 'io1'."
@@ -165,10 +162,7 @@ variable "root_vol_del_on_term" {
   default     = "true"
 }
 
-/*
-http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html
-For the best per-I/O latency experience, we recommend that you provision an IOPS-to-GiB ratio greater than 2:1. For example, a 2,000 IOPS volume should be smaller than 1,000 GiB.
-*/
+
 variable "root_vol_iops" {
   type        = "string"
   description = "The amount of provisioned IOPS. Only utilized with 'root_vol_type' of 'io1'"
